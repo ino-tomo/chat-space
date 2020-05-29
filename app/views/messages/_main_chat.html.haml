@@ -1,0 +1,27 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__group-info__left-box
+      .main-chat__group-info__left-box__current-group
+        test
+      .main-chat__group-info__left-box__member-list
+        Member:
+        masa
+    .main-chat__group-info__edit-btn
+      = link_to 'Edit', '#', class: 'btn'
+  .main-chat__message-list
+    .main-chat__message-list__box
+      .main-chat__message-list__box__data
+        .main-chat__message-list__box__data__talker
+          masa
+        .main-chat__message-list__box__data__date
+          2020/5/28(Thu) 12:34:56
+      .main-chat__message-list__box__text
+        メッセージ
+  .main-chat__form
+    %form.main-chat__form__box
+      .main-chat__form__box__input
+        %input.main-chat__form__box__input__text{type: "text", placeholder: "type a message"}
+        %label.main-chat__form__box__input__image
+          = icon('fas', 'image')
+          %input.main-chat__form__box__input__image__file{type: "file"}
+    %input.main-chat__form__submit{type: 'submit', value: 'Send'}
